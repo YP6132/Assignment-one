@@ -1,0 +1,164 @@
+/* Global styles */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  html {
+	font-size: 16px;
+	
+  }
+  header{
+    background-image:linear-gradient(to left, white ,rgb(92, 149, 168));
+}
+  
+  body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: #333;
+	background-color: #f9f9f9;
+	background-image: linear-gradient(to right, white ,lightblue);
+  }
+  
+  a {
+	color: #0074D9;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	text-decoration: underline;
+	color: #003f70;
+  }
+  
+  /* Header */
+  .header {
+	background-color: #0074D9;
+	color: #fff;
+	padding: 1.5rem 2rem;
+	text-align: center;
+	
+  }
+  
+  .header h1 {
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	
+  }
+  
+  .header p {
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+  }
+  
+  /* Main content */
+  .main-content {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2rem;
+  }
+  
+  h1{
+	text-align: center;
+  }
+  h2 {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	text-align: center;
+  }
+  
+  .summary, .preamble, .explanation, .participation, .benefits {
+	margin: 2rem 0;
+	padding: 1.5rem;
+	border-radius: 10px;
+	background-color: #fff;
+    margin-right: 20px;
+  }
+  
+  .explanation {
+	background-color: lightyellow;
+  }
+  
+  .participation {
+	background-color: #F0FFFF;
+  }
+  
+  .benefits {
+	background-color: #FFC0CB;
+  }
+  
+  .supporting {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .supporting .explanation {
+	flex: 1;
+	margin-right: 2rem;
+  }
+  
+  .supporting .participation {
+	flex: 1;
+	margin-bottom: 2rem;
+	
+  }
+  
+  .supporting .benefits {
+	flex: 1;
+	margin-bottom: 2rem;
+  }
+  
+  .supporting::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+  }
+  
+  .supporting:hover::before {
+	opacity: 1;
+  }
+  #zen-requirements{
+	background-image: linear-gradient(to right, white ,lightblue);
+  }
+  /* Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+  
+  h1, h2, h3 {
+	font-family: 'Montserrat', fantasy;
+  }
+  
+  h1 {
+	font-size: 4rem;
+	font-weight: 700;
+  }
+  
+  h3 {
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+  }
+  
+  /* Box model properties */
+  .summary, .preamble, .explanation, .participation, .benefits {
+	padding: 1.5rem;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+	.supporting .explanation,
+	.supporting .participation,
+	.supporting .benefits ,
+	
+	
+  
+	.supporting .explanation {
+		margin: 2rem 0;
+	}
+}
